@@ -1,0 +1,200 @@
+
+.product-container{
+margin-top: 2rem;
+}
+.product-header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 16px; /* Optional gap between items */
+}
+/* @media(max-width: 768px){
+    .product-header{
+        display: block;
+    }
+} */
+/* First item: Column 1, Row 1 */
+.item1 {
+    grid-column: 1 / 2; /* Occupies column 1 */
+    grid-row: 1 / 2;    /* Occupies row 1 */
+    background-color: white !important;
+    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);  */
+    /* height: fit-content; */
+    
+    padding: 16px;
+  }
+  
+  /* Second item: Column 2, Row 2 */
+  .item2 {
+    grid-column: 2 / 3; /* Occupies column 2 */
+    grid-row: 1 / 3;    /* Occupies row 2 */
+    background-color: white !important;
+    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); */
+    padding: 16px;
+  }
+  
+  /* Third item: Column 1, Row 2 */
+  .item3 {
+    grid-column: 1 / 2; /* Occupies column 1 */
+    grid-row: 2 / 3;    /* Occupies row 2 */
+    background-color: white !important;
+    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); */
+
+    padding: 16px;
+  }
+  
+  /* Responsive behavior: Stack all items in one column */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 100%; /* Single column */
+      grid-template-rows: auto;  /* Automatic rows */
+    }
+  
+    .item1,
+    .item2,
+    .item3 {
+      grid-column: 1 / 3; /* All items occupy the single column */
+      grid-row: auto;     /* Stack in order */
+    }
+  }
+
+
+
+ .h1-design{
+    color: #003366;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-family: 'Cinzel', sans-serif;
+    margin-top: 4rem;
+}
+@media (max-width: 769px) {
+    .h1-design{
+        margin-top: 0rem;
+        margin-left: 1rem;
+    }
+}
+.h1-sub-design{
+    font-size: clamp(1rem, 5vw, 1.8rem);
+    font-family: 'Cinzel', sans-serif;
+    padding-top: 2rem;
+    color: #003366;
+
+}
+.p-line{
+    color: red;
+}
+
+/********************************** Description **********************************/
+.pp-part1{
+    font-family: 'Resolve Light', sans-serif;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+    background-color: white !important;
+    /* background-color: white !important;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); */
+
+}
+/* .product-description{
+    background-color: white !important;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);  
+} */
+.ph1-lg{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 24px !important;
+    margin: 1rem 0 1rem 0;
+    color: #003366;
+
+}
+.ph1{
+    font-family: 'Cinzel', sans-serif;
+    font-size: clamp(1rem, 5vw, 1.5rem) !important;
+    margin: 1rem 0 1rem 0;
+    color: #003366;
+
+}
+.ph2{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 18px !important;
+    margin: 1rem 0 1rem 0;
+    color: #003366;
+
+}
+
+/**********************************  **********************************/
+.fontR{
+    font-family: 'Resolve Light', sans-serif;
+}
+
+@media(min-width: 768px){
+    .fontR{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+.pbtn-header{
+    font-size: 22px;
+    font-weight: 500;
+}
+@media(max-width: 700px){
+    .pbtn-header{
+        font-size: 16px;
+    }
+}
+.pfeature{
+    font-size: 14px;
+}
+.list{
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+/* ***************************************** */
+.grains{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+@media (max-width: 1024px){
+    .grains{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0rem;
+         margin-right: 0rem;
+        justify-content: space-evenly;
+        
+    }
+}
+.grain-header{
+    text-align: center;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #0a2071;
+    /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); */
+}
+.grain-header h1{
+    padding: 1rem;
+}
+.card-header{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 18px;
+    color: #003366;
+}
+.card-p{
+    font-family: 'Resolve Light', sans-serif;
+}
+.grain-container{
+    margin-bottom: 1rem;
+}
+
+
+
+/******************  */
+.btn-more{
+    background-color: #003366;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
